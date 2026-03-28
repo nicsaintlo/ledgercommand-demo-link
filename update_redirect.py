@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 INDEX = ROOT / 'index.html'
 README = ROOT / 'README.md'
-PATTERN = re.compile(r'https://[a-z0-9]+\.lhr\.life/site/')
+PATTERN = re.compile(r'https://[a-z0-9]+\.lhr\.life')
 JOURNAL_PATTERN = re.compile(r'https://([a-z0-9]+\.lhr\.life)')
 
 
@@ -22,7 +22,7 @@ def latest_tunnel_url():
     urls = JOURNAL_PATTERN.findall(out)
     if not urls:
         raise RuntimeError('No tunnel URL found in journal')
-    return f'https://{urls[-1]}/site/'
+    return f'https://{urls[-1]}'
 
 
 def current_redirect_url():
