@@ -2,4 +2,4 @@
 
 Stable GitHub Pages redirect for the current LedgerCOMMAND public app URL.
 
-Current target: https://e1ea2354565487.lhr.life
+Current target: https://8bb26379a7334c.lhr.life
